@@ -271,14 +271,13 @@ img {
   text-align: center;
   color: #434455;
 }
-
 .social-links {
   display: flex;
   align-items: center;
   gap: 24px;
   margin-right: 0 auto;
   margin-left: 0 auto;
-  padding: 0px 16px 32px 16px;
+  padding: 0px 16px;
 }
 .social-links .link {
   justify-content: center;
@@ -289,7 +288,19 @@ img {
   background-color: #4d5ae5;
   display: flex;
 }
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: #404bbf;
+}
+.social-links .icon {
+  fill: #fff;
+}
 
+.social-links {
+  display: flex;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
 .titlte-portfolio {
   display: block;
   text-align: center;
@@ -358,8 +369,7 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  padding: 40px 32px 164px 32px;
-  /* line-height: 24px; */
+  padding: 40px 32px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
